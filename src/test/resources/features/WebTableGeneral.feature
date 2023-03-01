@@ -1,3 +1,5 @@
+@webtable
+
 Feature: Some of the general functionality verifications
 
   Scenario: Dropdown options verification
