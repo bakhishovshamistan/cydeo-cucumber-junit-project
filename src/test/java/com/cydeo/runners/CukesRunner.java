@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions(
         plugin = {
+                "json:target/cucumber.json",
                 "pretty",
                 "html:target/cucumber-reports.html",
                 "rerun:target/rerun.txt",
@@ -16,7 +17,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
         dryRun = false,
-        tags = "@",
+        tags = "@webtable",
       //  monochrome = false, // for coloring
         publish = true // generating a report with public link
 
